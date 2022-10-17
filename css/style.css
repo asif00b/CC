@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #dc143c20;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #0f0e0e;
+  padding: 1% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible;
+}
+.bar {
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  visibility: hidden;
+}
+.logo {
+  transition: 0.5s;
+}
+.logo a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+.C {
+  color: crimson;
+}
+
+.logo:hover .S {
+  color: crimson;
+}
+.logo:hover .M {
+  color: crimson;
+}
+
+.close {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style-type: none;
+  padding: 10px;
+}
+.nav-item {
+  text-decoration: none;
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: transparent;
+  transition: 0.5s;
+}
+.nav-item:hover::after {
+  background: crimson;
+  width: 100%;
+}
+.cta {
+  color: #fff;
+  background: crimson;
+  border: 1px solid crimson;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.cta:hover {
+  border: 1px solid crimson;
+  color: crimson;
+  background: transparent;
+}
+
+/* banner section  */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#20202090, #0000005b), url(../images/banner.jpg);
+  background-position: 40% 50%;
+  background-size: cover;
+  position: relative;
+}
+.banner h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+.banner p {
+  color: #ffffffbb;
+  width: 30%;
+  position: absolute;
+  top: 38%;
+  left: 2%;
+  font-size: 12px;
+}
+.banner .btn {
+  position: absolute;
+  top: 44%;
+  left: 2%;
+  text-decoration: none;
+  color: #fff;
+  background: crimson;
+  border: 1px solid crimson;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.banner .btn:hover {
+  background: transparent;
+  color: #dc143c;
+  font-weight: bold;
+}
+
+/* End banner section  */
+
+@media (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  .bar {
+    visibility: visible;
+    z-index: 1;
+  }
+  .close {
+    visibility: visible;
+    margin: 10px 30px 0 auto;
+  }
+  .nav-menu ul {
+    background: #0f0e0e;
+    flex-direction: column;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .nav-links {
+    padding: 10px 0;
+  }
+  /* Banner section  */
+  .banner h1 {
+    font-size: 25px;
+    width: 200px;
+    top: 25%;
+    color: #fff;
+  }
+
+  .banner .btn {
+    top: 50%;
+  }
+}

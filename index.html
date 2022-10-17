@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"
+            ><h2>
+              <span class="S">S</span>AR<span class="C">C</span>AS<span
+                class="M"
+                >M</span
+              >
+            </h2></a
+          >
+        </div>
+        <i class="fa-solid fa-bars bar" onclick="showMenu()"></i>
+        <div class="nav-menu">
+          <ul id="navMenu">
+            <i class="fa-solid fa-xmark close" onclick="hideMenu()"></i>
+            <li class="nav-links"><a class="nav-item" href="#">Home</a></li>
+            <li class="nav-links"><a class="nav-item" href="#">About Us</a></li>
+            <li class="nav-links"><a class="nav-item" href="#">Services</a></li>
+            <li class="nav-links"><a class="nav-item" href="#">Contact</a></li>
+            <a class="cta" href="#">Sign Up</a>
+          </ul>
+        </div>
+      </div>
+      <section class="banner">
+        <h1>Welcome to our website</h1>
+        <div class="text-reveal"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+          aspernatur omnis.
+        </p>
+        <a href="#" class="btn"
+          >ORDER NOW <i class="fa-solid fa-arrow-right-long"></i
+        ></a>
+      </section>
+    </div>
+
+    <script>
+      var navMenu = document.getElementById("navMenu");
+      function showMenu() {
+        navMenu.style.width = "40%";
+      }
+      function hideMenu() {
+        navMenu.style.width = "0";
+      }
+    </script>
+  </body>
+</html>
