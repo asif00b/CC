@@ -32,13 +32,21 @@
           <ul id="navMenu">
             <i class="fa-solid fa-xmark close" onclick="hideMenu()"></i>
             <li class="nav-links"><a class="nav-item" href="#">Home</a></li>
-            <li class="nav-links"><a class="nav-item" href="#">About Us</a></li>
-            <li class="nav-links"><a class="nav-item" href="#">Services</a></li>
-            <li class="nav-links"><a class="nav-item" href="#">Contact</a></li>
+            <li class="nav-links">
+              <a class="nav-item" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-links">
+              <a class="nav-item" href="#products">Products</a>
+            </li>
+            <li class="nav-links">
+              <a class="nav-item" href="#contact">Contact</a>
+            </li>
             <a class="cta" href="#">Sign Up</a>
           </ul>
         </div>
       </div>
+      <!-- Banner section  -->
+
       <section class="banner">
         <h1>Welcome to our website</h1>
         <div class="text-reveal"></div>
@@ -46,16 +54,186 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
           aspernatur omnis.
         </p>
-        <a href="#" class="btn"
+        <a href="#products" class="btn"
           >ORDER NOW <i class="fa-solid fa-arrow-right-long"></i
         ></a>
       </section>
+      <!-- End Banner section  -->
     </div>
-
+    <!-- About section  -->
+    <section class="about-us" id="about-us">
+      <div class="section-title">
+        <h2>About us</h2>
+        <hr />
+      </div>
+      <div class="desc">
+        <p>
+          Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Vero, enim consequatur adipisci, cumque quisquam repudiandae
+          eius magnam sequi sapiente ad nulla iste, delectus voluptate. Ipsa,
+          dolorum consequuntur laudantium harum ipsam voluptate, impedit dolores
+          atque quisquam accusantium aut voluptatem labore maxime molestias nisi
+          tenetur delectus iste vitae repellat voluptas. Dicta, repellendus.,
+          sit amet consectetur adipisicing elit. Expedita, fugit
+        </p>
+      </div>
+    </section>
+    <!-- End About section  -->
+    <!-- product section  -->
+    <section class="products" id="products">
+      <div class="section-title">
+        <h2>Our Collection</h2>
+        <hr />
+      </div>
+      <div class="product-cards">
+        <div class="card">
+          <div class="card-title">
+            <h3>Twisted</h3>
+          </div>
+          <div class="card-img">
+            <img src="./images/s1.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <p><strike>$4,800</strike> <span>$3,999</span></p>
+            <a href="#" class="cbtn">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Salmon</h3>
+          </div>
+          <div class="card-img">
+            <img src="./images/s2.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <p><strike>$9,500</strike> <span>$8000</span></p>
+            <a href="#" class="cbtn">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Pigeon</h3>
+          </div>
+          <div class="card-img">
+            <img src="./images/s3.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <p><strike>$5,500</strike> <span>$5000</span></p>
+            <a href="#" class="cbtn">Buy Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Eggplant</h3>
+          </div>
+          <div class="card-img">
+            <img src="./images/s4.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <p><strike>$5,899</strike> <span>$4,999</span></p>
+            <a href="#" class="cbtn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End product section  -->
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+      <div class="left-side">
+        <h4>Contact</h4>
+        <form>
+          <span>Full Name :</span>
+          <input
+            class="i1"
+            type="text"
+            placeholder="Enter your name"
+            required
+          /><br />
+          <span>Email :</span>
+          <input
+            class="i2"
+            type="email"
+            placeholder="Enter your email"
+            required
+          /><br />
+          <span>Mobile:</span>
+          <input
+            class="i3"
+            type="text"
+            placeholder="Enter your mobile number"
+          /><br />
+          <span>Gender :</span>
+          <input class="gndr" type="radio" name="gender" /><span>Male</span>
+          <input class="gndr" type="radio" name="gender" /><span>Female</span>
+          <input class="gndr" type="radio" name="gender" /><span>Other</span>
+          <br />
+          <textarea
+            class="txt"
+            cols="29"
+            rows="5"
+            placeholder="Enter your feedback message"
+          ></textarea
+          ><br />
+          <input class="f-btn" type="submit" value="Send" />
+          <input class="f-btn" type="reset" value="Clean" />
+        </form>
+      </div>
+      <div class="mid-side">
+        <h4>Our Branches</h4>
+        <div class="address">
+          <h5>Nike by Glendale</h5>
+          <address>
+            <p>837 Americana Way,Suite D-11</p>
+            <p>Glendale,CA,91210,US</p>
+            <p><span>Open</span>. Closes at 9:00 PM</p>
+          </address>
+        </div>
+        <div class="address">
+          <h5>Nike by Long Beach</h5>
+          <address>
+            <p>754 Pasific Way,Suite D-11</p>
+            <p>Glendale,CA,91210,US</p>
+            <p><span>Open</span>. Closes at 9:00 PM</p>
+          </address>
+        </div>
+        <div class="address">
+          <h5>Nike by San Ramon</h5>
+          <address>
+            <p>837 Americana Way,Suite D-11</p>
+            <p>Glendale,CA,91210,US</p>
+            <p><span>Open</span>. Closes at 9:00 PM</p>
+          </address>
+        </div>
+      </div>
+      <div class="right-side">
+        <h4>Location</h4>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1278556701586!2d-122.83106787792372!3d45.5075047815276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ec24d4da46d%3A0xa6e823d05767d2d0!2sNike%20World%20Headquarters!5e0!3m2!1sen!2sbd!4v1666119806877!5m2!1sen!2sbd"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- End contact section  -->
+    <footer>
+      <div>
+        <p>Desighned & Developed By <span>&copy;ASIF</span></p>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="icon fa-solid fa-house"></i></a>
+        <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="icon fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="icon fa-solid fa-envelope"></i></a>
+      </div>
+    </footer>
     <script>
       var navMenu = document.getElementById("navMenu");
       function showMenu() {
-        navMenu.style.width = "40%";
+        navMenu.style.width = "300px";
       }
       function hideMenu() {
         navMenu.style.width = "0";

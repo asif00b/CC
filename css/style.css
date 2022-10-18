@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .header {
   width: 100%;
   height: 100vh;
   background: #dc143c20;
+  overflow: hidden;
 }
 .navbar {
   width: 100%;
@@ -18,8 +20,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   overflow: visible;
+  position: fixed;
+  z-index: 3;
 }
 .bar {
   color: #fff;
@@ -32,6 +35,7 @@
   z-index: 2;
   visibility: hidden;
 }
+
 .logo {
   transition: 0.5s;
 }
@@ -60,6 +64,9 @@
   font-size: 30px;
   margin-top: 10px;
   visibility: hidden;
+}
+.close:hover {
+  transform: rotate(360deg);
 }
 .nav-menu ul {
   display: flex;
@@ -157,8 +164,226 @@
 
 /* End banner section  */
 
+/* About section  */
+.about-us {
+  height: 350px;
+  text-align: center;
+  padding: 5% 4%;
+}
+.section-title h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: #dc143c;
+}
+hr {
+  width: 150px;
+  margin: 10px auto;
+  border: 5px dotted crimson;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+.desc p {
+  color: #dc143cab;
+  font-size: 18px;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+/* End About section  */
+/* product section  */
+
+.products {
+  background: #1374ac93;
+  height: 600px;
+  text-align: center;
+  padding: 2% 4%;
+  overflow: hidden;
+}
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  border-radius: 10px;
+  margin: 30px 20px;
+  height: 470px;
+  width: 300px;
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card-img img {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.card-title {
+  background: #6c1c34;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.card-body {
+  width: 100%;
+  height: 110px;
+}
+.card-body p {
+  margin: 10px 0 25px 0;
+  color: #dc143c;
+  font-size: 18px;
+}
+.card-body p span {
+  font-size: 22px;
+  color: #de1919;
+  font-weight: bold;
+}
+.card-body .cbtn {
+  text-decoration: none;
+  border: 2px solid #dc143c;
+  border-radius: 25px;
+  padding: 15px 30px;
+  color: #fff;
+  background: #dc143c;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.cbtn:hover {
+  border: 2px solid #dc143c;
+  background: transparent;
+  color: #dc143c;
+}
+
+/* End product section  */
+
+/* contact section  */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 4%;
+  background: #581845;
+}
+.contact h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.left-side span {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.left-side .i1 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 245px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.left-side .i2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 245px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 33px;
+}
+.left-side .i3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 245px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.left-side .gndr {
+  margin-bottom: 15px;
+  color: white;
+  margin-left: 10px;
+}
+.left-side .txt {
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  padding: 5px;
+  font-size: 18px;
+  width: 338px;
+}
+.txt:focus,
+input:focus {
+  outline: none;
+}
+.f-btn {
+  color: #ffffff;
+  border: 1px solid #dc143c;
+  border-radius: 25px;
+  background: #dc143c;
+  text-transform: uppercase;
+  padding: 10px 58px;
+  margin: 5px 10px 10px 0;
+  transition: 0.4s;
+}
+.f-btn:hover {
+  background: #ff0033;
+}
+
+.address h5 {
+  color: rgb(212, 212, 212);
+  font-size: 18px;
+}
+.address p {
+  color: #ffffffb7;
+  font-size: 14px;
+}
+.address span {
+  color: #25b025;
+}
+.address {
+  margin: 25px auto;
+  line-height: 1.4;
+  text-align: center;
+}
+.right-side h4 {
+  margin-bottom: 30px;
+}
+
+.right-side .map {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background: #0f0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer p {
+  color: #fff;
+}
+footer span {
+  color: #dc143c;
+}
+footer .icon {
+  color: #dc143c;
+  font-size: 25px;
+  padding: 5px;
+}
+
+/* End contact section  */
+
 @media (max-width: 850px) {
   .navbar {
+    position: relative;
     flex-direction: column;
     justify-content: center;
   }
@@ -171,7 +396,9 @@
   }
   .close {
     visibility: visible;
-    margin: 10px 30px 0 auto;
+    margin: 20px 35px 50px auto;
+    font-size: 40px;
+    transition: 0.5s;
   }
   .nav-menu ul {
     background: #0f0e0e;
@@ -185,8 +412,9 @@
     transition: 0.5s;
   }
   .nav-links {
-    padding: 10px 0;
+    padding-bottom: 30px;
   }
+
   /* Banner section  */
   .banner h1 {
     font-size: 25px;
@@ -197,5 +425,40 @@
 
   .banner .btn {
     top: 50%;
+  }
+  /* End Banner section  */
+  .about-us {
+    height: auto;
+  }
+  .products {
+    height: auto;
+  }
+  .product-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mid-side {
+    margin-top: 50px;
+  }
+  form {
+    text-align: center;
+  }
+  .f-btn {
+    padding: 10px 45px;
+  }
+  .right-side h4 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  footer p {
+    font-size: 12px;
   }
 }
